@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0
-  DEVICE: X655C
+  DEVICE: x657c
   DT_LINK: https://github.com/twrpdtgen/android_device_infinix_Infinix-X657C/tree/full_x657c_h6117-user-10-QP1A.190711.020-319582-release-keys
-  DT_PATH: device/infinix/X655C
+  DT_PATH: twrpdtgen/android_device_infinix_Infinix-X657C/tree
   TARGET: recoveryimage
   TZ: Asia/Karachi
 
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_PITCHBLACK_10.0
-          name: TWRP-X655C
+          name: TWRP-x657c
           files: | 
             work/out/target/product/X655C/recovery.img
